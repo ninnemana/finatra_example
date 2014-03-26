@@ -18,7 +18,7 @@ import com.twitter.util.TimeConversions._
       .hosts("curtapi.curtmfg.com:80")
       .hostConnectionLimit(5)
       .tcpConnectTimeout(500.milliseconds)
-      .timeout(2.seconds)
+      .timeout(5.seconds)
       .build()
 
     def getYears : Future[HttpResponse] = {
